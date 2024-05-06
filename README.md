@@ -33,7 +33,12 @@ The build requires java8 because of some required libraries that are java8.
 ## Support
 feel free to open an issue with your question, the maintainers are looking over these periodically. 
 
+## Contact 
+eugeneliu520@outlook.com
 
+## TODO
+- admin page
+- documentation 
 
 通过领域驱动设计方式(DDD)开发系统的时候，我们会把系统分层架构。在大多数情况下，越靠近基础层变化越小。这种分层方法有利于管理变更，增强系统的可维护性和灵活性。
 但是随着业务逻辑的复杂性和规模的增长，这会导致业务层（Domain Layer）的代码量增加，逻辑变得复杂。
