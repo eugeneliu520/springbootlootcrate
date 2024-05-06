@@ -27,6 +27,12 @@ features of springbootlootcrate include:
 These features provide the ability for business isolation and confidentiality among development of different business functionalities.
 You can even outsource the development of your business logic code without concerns of leaking underlying service logic.
 
+## Building
+The build requires java8 because of some required libraries that are java8.
+
+## Support
+feel free to open an issue with your question, the maintainers are looking over these periodically. 
+
 
 
 通过领域驱动设计方式(DDD)开发系统的时候，我们会把系统分层架构。在大多数情况下，越靠近基础层变化越小。这种分层方法有利于管理变更，增强系统的可维护性和灵活性。
