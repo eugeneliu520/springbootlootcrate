@@ -8,14 +8,16 @@ Such a layered approach facilitates managing changes, enhancing maintainability 
 However, as the complexity and scale of business logic grow, 
 this leads to an increase in the volume of code within the Domain Layer, making the logic more intricate.
 
-To address this issue, DDD advocates for employing strategies such as continuous refactoring, layered architecture, 
+To solve this issue, DDD advocates for employing strategies such as continuous refactoring, layered architecture, 
 Bounded Contexts to define clear boundaries, code reviews, and thorough documentation.
 
-springbootlootcrate provides a solution to this issue.
+now springbootlootcrate provides a solution to this issue.
 
 The logic behind springbootlootcrate is to package separable business logic code into a standalone JAR package, 
 which is then dynamically loaded within a container created within the host Spring Boot application. 
-This JAR package has the capability to leverage underlying services provided by the host application.
+Based on declared dependency information, the dependent services are injected into the newly created container.
+This design enables business JAR packages to access host services on-demand, 
+achieving clearer dependencies and finer-grained permission controls.
 
 features of springbootlootcrate include:
 - clear business layer packaging
