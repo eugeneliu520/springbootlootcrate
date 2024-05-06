@@ -42,11 +42,12 @@ abstract class AbstractDeployContext implements DeployContext{
 
     @Override
     public boolean resolveConfig(){
+        //TODO
         ClassLoader classLoader = getContainerClassLoader();
         URL resourceUrl = classLoader.getResource("config.properties");
         if (resourceUrl == null) {
             System.err.println("Cannot find config.properties in the JAR file.");
-            return;
+            return true;
         }
 
 //        // 读取配置文件
@@ -54,6 +55,7 @@ abstract class AbstractDeployContext implements DeployContext{
 //        try (InputStream in = resourceUrl.openStream()) {
 //            props.load(in);
 //        }
+        return false;
 
     }
 }
