@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.eugene.springboot.lootcrate.starter.LootCrateAutoconfiguration,\
+com.eugene.springboot.lootcrate.starter.RootCrateWebMvcConfig
